@@ -7,7 +7,7 @@ redis   = require 'redis'
 
 if (process.env.REDISTOGO_URL)
   rtg = url.parse(process.env.REDISTOGO_URL)
-  rclient = createClient(rtg.port, rtg.hostname)
+  rclient = redis.createClient(rtg.port, rtg.hostname)
 
   rclient.auth(rtg.auth.split(":")[1])
 else
