@@ -17,7 +17,7 @@ class ReadSvbtle.Views.Index extends Backbone.View
     if @collection.models.length == 0
       @spinner().spin @$('#spin')[0]
     else
-      @$('#spin').html ""
+      @$('#spin').remove()
 
     @$('.entry').addClass 'animated fadeInRight'
     this
