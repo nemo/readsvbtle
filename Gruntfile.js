@@ -340,7 +340,7 @@ module.exports = function (grunt) {
         'build'
     ]);
 
-    grunt.registerTask('heroku:production', 'build');
+    grunt.registerTask('heroku', 'build');
 
 };
 
