@@ -43,7 +43,7 @@ app = express()
 app.use express.logger 'dev'
 app.use gzippo.staticGzip "#{__dirname}/dist"
 
-app.get '/refresh', (req, res) ->
+app.post '/refresh', (req, res) ->
   parser 'http://feeds.feedburner.com/svbtle', (error, rss) =>
     if error
       res.send error
