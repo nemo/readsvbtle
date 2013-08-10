@@ -1,0 +1,20 @@
+<ul class='entries'>
+<% for model in @collection.models: %>
+  <li class='row entry' style="background-color:<%= model.get('color') %>">
+    <a href="<%= model.get('origlink') %>?utm_source=readsvbtle&utm_medium=web&utm_campaign=readsvbtle">
+      <div class="span1">
+        <div class="figure">
+          <img src="<%= model.get('icon_url') %>" />
+        </div>
+      </div>
+      <div class="span7 title">
+        <p><%= model.get('title') %></p>
+      </div>
+      <div class="span3 author">
+        <p><%= model.get('author') %></p>
+      </div>
+      <div class="clear"></div>
+    </a>
+  </li>
+<% end %>
+</ul>

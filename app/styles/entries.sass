@@ -1,0 +1,44 @@
+@import 'colors'
+
+.entries
+  :margin-top 55px
+  :list-style none
+
+  .entry
+    :list-style none
+    :padding 5px 5px
+    :margin-top 15px
+    :color $entry_text_color
+
+    a
+      :color $entry_text_color
+
+      &:hover
+        :color darken($black, 40%)
+
+    .figure
+      :border 2px solid $entry_border_color
+      :-webkit-border-radius 40px
+      :-moz-border-radius 40px
+      :border-radius 40px
+      :margin-right 10px
+      :width 40px
+
+      img
+        :width 40px
+        :height 40px
+
+    .author
+      :text-transform uppercase
+      :font-weight bold
+      :text-align right
+      :margin-right 10px
+
+    .title p, .author p
+      :line-height 44px
+      :margin-bottom 0px
+
+  .clear
+    :clear both
+    :content ""
+

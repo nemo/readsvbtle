@@ -1,0 +1,15 @@
+@import 'sass-bootstrap/lib/bootstrap';
+@import 'sass-bootstrap/lib/responsive';
+
+@import 'colors';
+@import 'entries';
+
+
+.navbar p, .navbar .brand {
+  color: $white;
+  padding: 10px 20px 0px;
+}
+
+.footer p {
+  color: $lightgrey;
+}
