@@ -1,7 +1,7 @@
 <ul class='entries'>
 <% for model in @collection.models: %>
   <li class='row entry' style="background-color:<%= model.get('color') %>">
-    <a href="<%= model.get('origlink') %>?utm_source=readsvbtle&utm_medium=web&utm_campaign=readsvbtle">
+    <a href="<%= model.get('origlink') %>?utm_source=readsvbtle&utm_medium=web&utm_campaign=readsvbtle" target="_blank">
       <div class="span1">
         <div class="figure">
           <img src="<%= model.get('icon_url') %>" />
