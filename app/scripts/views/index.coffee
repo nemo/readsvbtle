@@ -1,6 +1,9 @@
 class ReadSvbtle.Views.Index extends Backbone.View
   template: JST['app/scripts/templates/index']
 
+  tagName: 'ul'
+  className: 'entries'
+
   initialize: =>
     @collection.on 'sync', @render
     @collection.on 'error', @error

@@ -1,4 +1,3 @@
-<ul class='entries'>
 <% for model in @collection.models: %>
   <li class='row entry' style="background-color:<%= model.get('color') %>">
     <a href="<%= model.get('origlink') %>?utm_source=readsvbtle&utm_medium=web&utm_campaign=readsvbtle" target="_blank">
@@ -17,4 +16,3 @@
     </a>
   </li>
 <% end %>
-</ul>
